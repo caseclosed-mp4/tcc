@@ -1,0 +1,18 @@
+[package]
+name = "tcc-integration"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+tcc-types = { path = "../modules/types" }
+tcc-dag = { path = "../modules/dag" }
+tcc-inference = { path = "../modules/inference" }
+tcc-trial = { path = "../modules/trial" }
+tcc-privacy = { path = "../modules/privacy" }
+tcc-network = { path = "../modules/network" }
+tcc-query = { path = "../modules/query" }
+
+[[test]]
+name = "full_loop"
+path = "full_loop.rs"

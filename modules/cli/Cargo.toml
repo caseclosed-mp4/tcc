@@ -1,0 +1,21 @@
+[package]
+name = "tcc-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+description.workspace = true
+
+[dependencies]
+tcc-types = { path = "../types" }
+tcc-dag = { path = "../dag" }
+tcc-inference = { path = "../inference" }
+tcc-trial = { path = "../trial" }
+tcc-privacy = { path = "../privacy" }
+tcc-network = { path = "../network" }
+tcc-query = { path = "../query" }
+
+[[bin]]
+name = "tcc"
+path = "src/main.rs"
